@@ -50,4 +50,5 @@ missing
 *.lock
 *.so
 git_new_repo.sh
+github_new_repo.sh
 node_modules/
