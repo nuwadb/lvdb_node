@@ -1,0 +1,31 @@
+{
+  "name": "lvdb_node",
+  "version": "0.1.0",
+  "description": "lvdb restful client for node.js",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nuwadb/lvdb_node.git"
+  },
+  "keywords": [
+    "lvdb","node"
+  ],
+  "devDependencies": {
+   
+   "mocha": "",
+   "should": ""
+  },
+  "bin":{
+    "client-test":"./bin/client-test"
+  },
+   
+  "author": "Kun Luo",
+  "license": "NuwaDB Inc.",
+  "readmeFilename": "Readme.md"
+}
