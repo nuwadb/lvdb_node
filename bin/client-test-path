@@ -6,19 +6,19 @@ var db = require('../lib/main');
 
 var connection=new(db.Connection)({port:9001});
 
-connection.sql(87,"select * from ip",function(err,data){
+connection.sql('/ssd/test4',"select * from ip",function(err,data){
    if(err){
-      console.log('error: ' + err);     
+      console.log('error: ' + err);
    } else {
       console.log(data);
-      connection.cmd(87,{cmd:'show_time'},function(err,data){
-         if(err){      
-            console.log('error: ' + err);     
+      connection.cmd('/ssd/test4',{cmd:'show_time'},function(err,data){
+         if(err){
+            console.log('error: ' + err);
          } else {
             console.log(data);
          }
-       });      
-      
+       });
+
    }
 });
 
